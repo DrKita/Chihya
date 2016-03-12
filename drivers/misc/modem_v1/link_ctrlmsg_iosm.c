@@ -134,7 +134,7 @@ static inline int check_ul_space(u32 qlen, u32 in, u32 out)
 	return space;
 }
 
-inline void create_iosm_message(struct iosm_msg *txmsg, u8 mid, u32 *args)
+static void create_iosm_message(struct iosm_msg *txmsg, u8 mid, u32 *args)
 {
 	struct iosm_msg *msg;
 
